@@ -79,9 +79,9 @@ export default function App() {
   useEffect(() => {
     const update = () => {
       const now = new Date();
-      let launch = new Date(now.getFullYear(), now.getMonth(), 25, 0, 0, 0);
+      let launch = new Date(now.getFullYear(), now.getMonth(), 21, 0, 0, 0);
       if (now > launch)
-        launch = new Date(now.getFullYear(), now.getMonth() + 1, 25, 0, 0, 0);
+        launch = new Date(now.getFullYear(), now.getMonth() + 1, 21, 0, 0, 0);
 
       const diff = launch - now;
 
